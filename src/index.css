@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@layer components {
+  .graph-tab {
+    @apply rounded-t-md border-b-0 p-4 py-1 cursor-pointer translate-y-[10px] relative z-[5] duration-300;
+  }
+}
+
+.graph-tab {
+  height: 35px;
+  border: 1px solid #907eff;
+  border-bottom: 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.graph-tab:hover {
+  transform: translateY(0px);
+}
+
+.graph-tab.active {
+  transform: translateY(0px);
+}
